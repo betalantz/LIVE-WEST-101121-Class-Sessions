@@ -48,6 +48,10 @@ Create your migrations.
 - What associations will this need?
 - (i.e. `has_many`, `has_many through`, and `belongs_to`)
 
+- Role has_many Actors
+- Actor belongs_to Role
+- `Role --< Actor`
+
 ## Audition
 
 - `Audition#role` returns an instance of role associated with this audition

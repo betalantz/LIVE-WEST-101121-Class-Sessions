@@ -34,25 +34,25 @@ Company --< Freebies >-- Dev
 
 #### Freebie
 
-- `Freebie#print_details`
+- [x]`Freebie#print_details`
   - should return a string formatted as follows:
     `{insert dev's name} owns a {insert freebie's item_name} from {insert company's name}`
 
 #### Company
 
-- `Company#give_freebie(dev, item_name, value)`
+- [x]`Company#give_freebie(dev, item_name, value)`
   - takes a `dev` (an instance of the `Dev` class), an `item_name` (string), and a `value`
     as arguments, and creates a new `Freebie` instance associated with this
     company and the given dev
-- `Company.oldest_company`
+- [x]`Company.oldest_company`
   - returns the `Company` instance with the earliest founding year
 
 #### Dev
 
-- `Dev#received_one?(item_name)`
+- [x]`Dev#received_one?(item_name)`
   - accepts an `item_name` (string) and returns true if any of the freebies
     associated with the dev has that `item_name`, otherwise returns false
-- `Dev#give_away(dev, freebie)`
+- [x]`Dev#give_away(dev, freebie)`
   - accepts a `Dev` instance and a `Freebie` instance, changes the freebie's dev
     to be the given dev; your code should only make the change if the freebie
     belongs to the dev who's giving it away

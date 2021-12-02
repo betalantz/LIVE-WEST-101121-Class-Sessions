@@ -2,7 +2,7 @@ class Company < ActiveRecord::Base
 
     def self.oldest_company
         # self.all.min {|a, b| a.founding_year <=> b.founding_year} # using Ruby method .min
-        self.all.order(:founding_year).first # use AR methods
+        self.order(:founding_year).first # use AR methods
     end
     
     has_many :freebies

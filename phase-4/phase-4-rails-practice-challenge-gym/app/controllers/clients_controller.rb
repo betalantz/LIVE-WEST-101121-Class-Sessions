@@ -3,11 +3,11 @@ class ClientsController < ApplicationController
     before_action :find_client, only: [:show, :update]
 
     def show
-        render json: @client
+        render json: @client, serializer: TotalMembershipsSerializer
     end
 
     def update
-        
+
     end
 
     private

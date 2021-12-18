@@ -5,6 +5,7 @@ class ActivitiesController < ApplicationController
     end
 
     def destroy
+        # doing the .find here because no other actions on this controller need to find one camper
         activity = Activity.find(params[:id])
         activity.destroy
         head :no_content

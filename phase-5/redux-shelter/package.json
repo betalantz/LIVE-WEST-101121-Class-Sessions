@@ -1,0 +1,13 @@
+{
+  "name": "redux-shelter",
+  "version": "1.0.0",
+  "description": "demo of redux in animal shelter domain",
+  "main": "index.js",
+  "author": "Betalantz",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "redux": "^4.1.2"
+  }
+}

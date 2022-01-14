@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import budgetReducer from '../features/budget/budgetSlice'
-import petsReducer from '../features/pets/petsSlice'
+import { petsApi } from '../app/services/petsApi'
+// import petsReducer from '../features/pets/petsSlice'
 
 // configureStore is a wrapper
 // around createStore BUT it sets up 
@@ -13,6 +14,9 @@ export const store = configureStore({
     // provide state.budget, state.pets to the store
     reducer: {
         budget: budgetReducer,
-        pets: petsReducer
+        [petsApi.reducerPath]: petsApi.reducer
+    },
+    middleware: (getDefaultMiddleware) => {
+        return getDefaultMiddleware().concat(petsApi.middleware)
     }
 })

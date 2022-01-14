@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import budgetReducer from '../features/budget/budgetSlice'
+import petsReducer from '../features/pets/petsSlice'
 
 // configureStore is a wrapper
 // around createStore BUT is sets up 
@@ -11,6 +12,7 @@ export const store = configureStore({
     // will automatically call combineReducers
     // provide state.budget to the store
     reducer: {
-        budget: budgetReducer
+        budget: budgetReducer,
+        pets: petsReducer
     }
 })

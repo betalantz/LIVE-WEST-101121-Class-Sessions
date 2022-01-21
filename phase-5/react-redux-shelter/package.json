@@ -3,15 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "server": "json-server -w db.json --port 3001",
+    "server": "json-server -w db.json --port 3001 -d 2000",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
     "@reduxjs/toolkit": "^1.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
+    "react-spinners": "^0.11.0",
     "redux": "^4.1.2",
     "semantic-ui-css": "^2.4.1"
   },

@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 
-export const apiSlice = createApi({
+export const dogsApi = createApi({
     reducerPath: 'dogsApi',
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://api.thedogapi.com/v1',
@@ -21,4 +21,4 @@ export const apiSlice = createApi({
     }
 })
 
-export const { useFetchBreedsQuery } = apiSlice
+export const { useFetchBreedsQuery } = dogsApi

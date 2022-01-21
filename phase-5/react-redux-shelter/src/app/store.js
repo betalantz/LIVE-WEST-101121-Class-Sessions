@@ -1,6 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 import budgetReducer from '../features/budget/budgetSlice'
 import { petsApi } from '../app/services/petsApi'
+import { dogsApi } from '../app/services/dogsApiSlice';
+;
+
 // import petsReducer from '../features/pets/petsSlice'
 
 // configureStore is a wrapper
@@ -14,7 +17,8 @@ export const store = configureStore({
     // provide state.budget, state.pets to the store
     reducer: {
         budget: budgetReducer,
-        [petsApi.reducerPath]: petsApi.reducer
+        [petsApi.reducerPath]: petsApi.reducer,
+        [dogsApi.reducerPath]: dogsApi.reducer
     },
     middleware: (getDefaultMiddleware) => {
         return getDefaultMiddleware().concat(petsApi.middleware)

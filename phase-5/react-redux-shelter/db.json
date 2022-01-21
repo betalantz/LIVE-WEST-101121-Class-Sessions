@@ -97,7 +97,7 @@
       "age": 6,
       "weight": 2,
       "name": "Max",
-      "isAdopted": false
+      "isAdopted": true
     },
     {
       "id": "20f15086-7952-4ead-bee4-bd8d8f990738",

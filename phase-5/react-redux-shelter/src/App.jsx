@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import Budget from './components/Budget'
 import PetContainer from './components/PetContainer'
-import logo from './logo.svg'
+import DogBrowser from './components/DogBrowser';
 import './App.css'
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <h1>Redux Animal Shelter</h1>
         <Budget />
         <PetContainer />
+        <DogBrowser />
       </header>
     </div>
   )

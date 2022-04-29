@@ -21,6 +21,6 @@ export const store = configureStore({
         [dogsApi.reducerPath]: dogsApi.reducer
     },
     middleware: (getDefaultMiddleware) => {
-        return getDefaultMiddleware().concat(petsApi.middleware)
+        return getDefaultMiddleware().concat(petsApi.middleware, dogsApi.middleware)
     }
 })
